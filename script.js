@@ -4,7 +4,7 @@ const content = document.getElementById("content");
 function generateContent() {
     let text = "";
 
-    for (let i=1; i<=20; i++) {
+    for (let i=1; i<=100; i++) {
         text += `<p>
         Paragraph $ {i}: JavaScript can interact with HTML paragraphs (<p> tags) in several ways, such as creating new paragraphs, modifying their content, or changing their style using the Document Object Model (DOM). 
         </p>`;
@@ -31,5 +31,6 @@ function updateScrollProgress() {
 }
 
 window.addEventListener("scroll", updateScrollProgress);
+
 
 updateScrollProgress();
